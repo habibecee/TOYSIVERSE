@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYSIVERSE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://kit.fontawesome.com/330ae4ea2a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR BAŞLANGIÇ -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" href="#"> TOYVERSE || OYUNCAK EVRENİ </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menü" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"> ANASAYFA </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#ürünler" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ÜRÜNLER
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> HANDMADE OYUNCAKLAR</a></li>
+
+                            <li><a class="dropdown-item" href="#"> LEGOLAR </a></li>
+
+                            <li><a class="dropdown-item" href="#"> ÇİZGİ FİLM KARAKTERLERİ </a></li>
+
+                            <li><a class="dropdown-item" href="#"> PELUŞ OYUNCAKLAR </a></li>
+
+                            <li><a class="dropdown-item" href="#"> EĞİTİCİ BEBEK OYUNCAKLARI </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> OUTLET </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> BLOG </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" id="searchh" type="submit"><i
+                            class="bi bi-search"></i></button>
+                    <button class="btn btn-outline-light basket-icon" id="id-cart" type="submit"><i
+                            class="bi bi-cart4"></i> <span class="basket-count"> 2 </span></button>
+                    <button class="btn btn-outline-light" id="id-cart" type="submit"><i
+                            class="bi bi-person-circle"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR BİTİŞ -->
+
+    <!-- SLİDER BAŞLANGIÇ -->
+    <section id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/slider/sl1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider/sl2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider/sl3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider/sl4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </section>
+
+    <!-- SLİDER BİTİŞ -->
+    <!-- ÜRÜN KARTLARI BAŞLANGIÇ -->
+
+    <section class="store row ">
+        <div class=" left-div col-3 shadow rounded" style="width: 50%;">
+            <div class="m-4 filtre-baslik">
+                <h4 class="font-weight-bold m-3"> ÜRÜNLERİ FİLTRELE </h4>
+                <hr>
+
+                <ul class="filtre">
+                    <li class="active"> TÜMÜ </li>
+                    <li> O-3 YAŞ OYUNCAKLARI </li>
+                    <li> HANDMADE OYUNCAKLAR </li>
+                    <li> KARAKTER OYUNCAKLARI </li>
+                    <li> LEGOLAR </li>
+                    <li> PELUŞ OYUNCAKLAR </li>
+                    <li> DİĞERLERİ </li>
+                </ul>
+            </div>
+            <!-- <div class="form-select" aria-label="Default select example"> -->
+            <!-- <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        TÜMÜ
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        0-3 Yaş Oyuncaklar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Handmade Oyuncaklar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Karakter Oyuncaklar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Legolar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Peluş Oyuncaklar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Diğerleri
+                    </label>
+                </div>
+                <button type="button" class="btn btn-filtre"> Filtrele </button>
+            </div> -->
+
+        
+        </div>
+        <div class="right-div row col-9">
+            <div class="text-center" id="ürünler" style="width: 100%; height:auto; ">
+                <h2 class="mt-3 font-weight-bold"> ÜRÜNLER </h2>
+                <hr class="ayrac"> <i class="fa-solid fa-paw i2"></i>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/peluş/peluş1.jpeg" class="card-img-top" alt="..."
+                        style="width:95%; height:95%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/peluş/peluş2.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/peluş/peluş3.jpg" class="card-img-top" alt="..."
+                        style="width:105%; height:105%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/lego/lego1.png" class="card-img-top" alt="..."
+                        style="width:110%; height:110%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/lego/lego2.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/lego/lego3.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/karakter/karakter1.png" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/karakter/karakter2.png" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/karakter/karakter3.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/handmade/handmade1.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/handmade/handmade2.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/handmade/handmade3.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/03yaş/03yaş1.jpeg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/03yaş/03yaş2.jpeg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/03yaş/03yaş3.webp" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/diğer/bebek.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/diğer/kaktüs.webp" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-2 card shadow rounded">
+                <div class="card-img-div col-3">
+                    <img href='#' src="assets/images/diğer/kovaset.jpg" class="card-img-top" alt="..."
+                        style="width:100%; height:100%;">
+                </div>
+                <div class="card-div col-8">
+
+                    <h4 class="card-title ürün-ad"> ÜRÜN ADI </h4>
+                    <h6 class="cart-title "> Markası </h6>
+                    <span class="m-0 p-0"> 4.1 </span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star checked m-0 p-0"></span>
+                    <span class="fa fa-star m-0 p-0"></span>
+                    <!-- <img class="m-0 p-0" src="/assets/icons/pointstars.png" alt="" style="width: 80px; height: 70px;"> -->
+                    <span class="m-0 p-0"> (100) </span>
+
+                    <div class="card-details-div col ">
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                            açıklamasız bırakılmıştır. </p>
+                        <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
+                                style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
+                        <button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
+                                Gör</a></button>
+                        <button type="button" class="btn " onclick="alert('ürün sepete eklendi')"><i
+                                class="bi bi-cart-check basket-icon"></i></button>
+                        <button type="button" class="btn " onclick="alert('ürün favorilere eklendi')"><i
+                                class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÜRÜN KARTLARI BİTİŞ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
