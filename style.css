@@ -109,7 +109,7 @@ body {
     position: relative;
     top: -45px;
     font-size: 30px;
-    border: 10px solid #E6C4C0; 
+    border: 10px solid #E6C4C0;
     background-color: #E6C4C0;
 }
 
@@ -117,14 +117,14 @@ body {
     border-top: 5px solid #694E4E;
     max-width: 300px;
     margin: 20px auto;
- }
+}
 
 
-.left-div{
+.left-div {
     width: 25% !important;
     height: 23rem !important;
     margin-top: 13% !important;
-   
+
 }
 
 /* .btn-filtre{
@@ -137,13 +137,13 @@ body {
    
 } */
 
-.filtre-baslik{
+.filtre-baslik {
     /* border: 2px solid red !important; */
     align-items: center !important;
     justify-content: center !important;
 }
 
-.filtre{
+.filtre {
     position: absolute !important;
     list-style-type: none;
     display: flex;
@@ -151,7 +151,7 @@ body {
     justify-content: center;
 }
 
-.filtre li{
+.filtre li {
     cursor: pointer;
     font-size: 1.3rem;
     margin-bottom: 10px;
@@ -159,32 +159,30 @@ body {
     font-weight: 400;
     transition: 0.2s ease-in-out;
 }
-.filtre li:hover{
+
+.filtre li:hover {
     color: #2FC4B2;
     font-weight: 600;
 }
 
-.filtre li.active{
-    color: #12947F ;
+.filtre li.active {
+    color: #12947F;
     font-size: 1.5rem;
     font-weight: bolder;
     /* #7027A0 */
-}
-.filtre li.active::before{
-
 }
 
 .right-div {
     width: 75% !important;
     height: auto !important;
     /* border: 2px solid red !important; */
-    position:relative !important;
+    position: relative !important;
 }
 
 .card {
     /* position:absolute !important; */
     margin: 15px 9px !important;
-   border: #c4b4b1 !important;
+    border: #c4b4b1 !important;
     /* padding: 3px !important; */
     width: 28rem !important;
     height: 16rem !important;
@@ -195,12 +193,13 @@ body {
 
 .checked {
     color: orange !important;
-  }
+}
 
 .card-img-div {
     margin: 10px 30px !important;
 }
-.ürün-ad{
+
+.ürün-ad {
     padding-top: 10px !important;
 }
 
@@ -215,29 +214,181 @@ body {
 
 }
 
-.btn-a{
+.btn-a {
     background-color: #845EC2 !important;
-
+    padding: 5px !important;
+    width: 130px !important;
 }
 
-.card-btn:hover{
+.card-btn:hover {
     background-color: #ac93b7 !important;
     color: #422d32 !important;
     border: none !important;
-    
+
 }
 
 .card-link {
-    padding: 10px !important;
+
     text-decoration: none !important;
     color: #F0D9E7 !important;
-    
+
 }
 
 .bi-cart-check,
 .bi-heart {
     color: black !important;
+    transition: 0.5s !important;
+
+}
+
+.sepet-fav {
+    border: none !important;
+    transition: 0.5s !important;
+
+}
+
+.sepet-fav:hover {
+    text-shadow: 0 0 5px rgb(0, 0, 0) !important;
+
+}
+
+.bi-cart-check:hover,
+.bi-heart:hover {
+    display: flex !important;
+    color: rgb(255, 225, 1) !important;
+    background-color: rgb(91, 91, 91, 0.2);
+    box-shadow: 0px 0px 20px rgb(91, 91, 91) !important;
+}
+
+/*card bitiş */
+
+
+/*sepet başlangıç */
+.basket {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c8aed350;
+    z-index: 999;
+    display: block;
+}
+
+.basket-items {
+    width: 450px;
+    height: 100%;
+    background-color: #E6C4C0;
+    float: right;
+}
+
+.xmark-icon {
+    width: 100%;
+
+    height: 60px;
+    align-items: center;
+}
+
+.xmark-button {
+    position: absolute !important;
+    right: 225px !important;
+    top: 10px !important;
+    font-size: 2rem !important;
+    color: #422d32 !important;
+    cursor: pointer !important;
+    border: none !important;
+
+
+}
+
+.xmark-button:hover {
+    border: none !important;
+}
+
+.basket-h2 {
+    width: 100%;
+
+    height: 70px;
+    text-align: center;
+
+}
+
+.items-list {
+    width: 100%;
+    max-height: 350px;
+    overflow: scroll;
+
+}
+
+.items-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.sepet-item-info {
+    text-align: left;
+
+}
+
+.sepet-fiyat {
+    margin-right: 10px;
+
+
+}
+
+.increase {
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
+.decrease {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.sepet-baslik:hover {
+    text-shadow: 0 0 10px #613741;
+
+}
+
+.sepet-sonuc {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 15%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.total {
+    width: 100%;
+    padding: 0 25px;
+
+}
+
+.total-danger{
+    margin-right: 10px !important;
+}
+
+.siparis-div {
+    position: relative;
+    width: 100%;
+    align-items: center;
+
+}
+
+.siparis {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 320px;
+
+
 }
 
 
-/*card bitiş */
+/*sepet bitiş */
