@@ -1,130 +1,127 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: 'Julee', cursive !important;
-    background-color: #E6C4C0 !important;
-    width: 100% !important;
-    height: auto !important;
+	font-family: "Julee", cursive !important;
+	background-color: #e6c4c0 !important;
+	width: 100% !important;
+	height: auto !important;
 }
 
 /* navbar başlangıç */
 
 .navbar {
-    background-color: #7A4495 !important;
-    height: 100px !important;
-    /* width: 100% !important;
+	background-color: #7a4495 !important;
+	height: 100px !important;
+	/* width: 100% !important;
     height: auto !important; */
 }
 
 .navbar-collapse {
-    margin: 0 50px !important;
+	margin: 0 50px !important;
 }
 
 .nav-link {
-    color: #FCE2DB !important;
-    font-size: 20px !important;
-    font-weight: bold !important;
+	color: #fce2db !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
 }
 
 .navbar-brand {
-    color: #FF8FB1 !important;
-    font-size: 30px !important;
-    font-weight: bold !important;
+	color: #ff8fb1 !important;
+	font-size: 30px !important;
+	font-weight: bold !important;
 }
 
 .nav-item {
-    margin: 0 20px !important;
+	margin: 0 20px !important;
 }
 
 .dropdown-menu {
-    background-color: #FCE2DB !important;
+	background-color: #fce2db !important;
 }
 
 .d-flex input {
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
 }
 
 #searchh {
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-    background-color: #B270A2 !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	background-color: #b270a2 !important;
 }
 
-#id-cart {
-    border: 0 !important;
-    margin-left: 10px !important;
+.id-cart {
+	border: 0 !important;
+	margin-left: 10px !important;
 }
 
 .basket-icon {
-    position: relative;
+	position: relative;
 }
 
 .basket-count {
-    position: absolute;
-    right: 0rem;
-    bottom: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgb(27, 27, 27);
-    color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
+	position: absolute;
+	right: 0rem;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgb(27, 27, 27);
+	color: antiquewhite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.7rem;
 }
 
 /* navbar bitiş */
 /*slider başlangıç */
 
 .slider {
-    width: 95% !important;
-    height: 450px !important;
-
+	width: 95% !important;
+	height: 450px !important;
 }
 
 .carousel-item img {
-    width: 100% !important;
-    height: 450px !important;
-    margin-left: 50px !important;
-    margin-right: 20px !important;
+	width: 100% !important;
+	height: 450px !important;
+	margin-left: 50px !important;
+	margin-right: 20px !important;
 }
 
 /*slider bitiş */
 /*card balangıç */
 .store {
-    margin: 20px 3% !important;
-    padding: auto !important;
+	margin: 20px 3% !important;
+	padding: auto !important;
 }
 
 .i2 {
-    /* color: #E6C4C0; */
-    position: relative;
-    top: -45px;
-    font-size: 30px;
-    border: 10px solid #E6C4C0;
-    background-color: #E6C4C0;
+	/* color: #E6C4C0; */
+	position: relative;
+	top: -45px;
+	font-size: 30px;
+	border: 10px solid #e6c4c0;
+	background-color: #e6c4c0;
 }
 
 .ayrac {
-    border-top: 5px solid #694E4E;
-    max-width: 300px;
-    margin: 20px auto;
+	border-top: 5px solid #694e4e;
+	max-width: 300px;
+	margin: 20px auto;
 }
 
-
 .left-div {
-    width: 25% !important;
-    height: 23rem !important;
-    margin-top: 13% !important;
-
+	width: 25% !important;
+	height: 23rem !important;
+	margin-top: 13% !important;
 }
 
 /* .btn-filtre{
@@ -138,257 +135,245 @@ body {
 } */
 
 .filtre-baslik {
-    /* border: 2px solid red !important; */
-    align-items: center !important;
-    justify-content: center !important;
+	/* border: 2px solid red !important; */
+	align-items: center !important;
+	justify-content: center !important;
 }
 
 .filtre {
-    position: absolute !important;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	position: absolute !important;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .filtre li {
-    cursor: pointer;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #845EC2;
-    font-weight: 400;
-    transition: 0.2s ease-in-out;
+	cursor: pointer;
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+	color: #845ec2;
+	font-weight: 400;
+	transition: 0.2s ease-in-out;
 }
 
 .filtre li:hover {
-    color: #2FC4B2;
-    font-weight: 600;
+	color: #2fc4b2;
+	font-weight: 600;
 }
 
 .filtre li.active {
-    color: #12947F;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    /* #7027A0 */
+	color: #12947f;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	/* #7027A0 */
 }
 
 .right-div {
-    width: 75% !important;
-    height: auto !important;
-    /* border: 2px solid red !important; */
-    position: relative !important;
+	width: 75% !important;
+	height: auto !important;
+	/* border: 2px solid red !important; */
+	position: relative !important;
 }
 
 .card {
-    /* position:absolute !important; */
-    margin: 15px 9px !important;
-    border: #c4b4b1 !important;
-    /* padding: 3px !important; */
-    width: 28rem !important;
-    height: 16rem !important;
-    background-color: #E6C4C0 !important;
-    /* box-shadow: #FCE2DB !important; */
-
+	/* position:absolute !important; */
+	margin: 15px 9px !important;
+	border: #c4b4b1 !important;
+	/* padding: 3px !important; */
+	width: 28rem !important;
+	height: 16rem !important;
+	background-color: #e6c4c0 !important;
+	/* box-shadow: #FCE2DB !important; */
 }
 
 .checked {
-    color: orange !important;
+	color: orange !important;
 }
 
 .card-img-div {
-    margin: 10px 30px !important;
+	margin: 10px 30px !important;
 }
 
 .ürün-ad {
-    padding-top: 10px !important;
+	padding-top: 10px !important;
 }
 
 .card-text {
-    text-align: justify !important;
-    padding-right: 15px !important;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 3 !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-
+	text-align: justify !important;
+	padding-right: 15px !important;
+	display: -webkit-box !important;
+	-webkit-line-clamp: 3 !important;
+	-webkit-box-orient: vertical !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
 }
 
 .btn-a {
-    background-color: #845EC2 !important;
-    padding: 5px !important;
-    width: 130px !important;
+	background-color: #845ec2 !important;
+	padding: 5px !important;
+	width: 130px !important;
 }
 
 .card-btn:hover {
-    background-color: #ac93b7 !important;
-    color: #422d32 !important;
-    border: none !important;
-
+	background-color: #ac93b7 !important;
+	color: #422d32 !important;
+	border: none !important;
 }
 
 .card-link {
-
-    text-decoration: none !important;
-    color: #F0D9E7 !important;
-
+	text-decoration: none !important;
+	color: #f0d9e7 !important;
 }
 
 .bi-cart-check,
 .bi-heart {
-    color: black !important;
-    transition: 0.5s !important;
-
+	color: black !important;
+	transition: 0.5s !important;
 }
 
 .sepet-fav {
-    border: none !important;
-    transition: 0.5s !important;
-
+	border: none !important;
+	transition: 0.5s !important;
 }
 
 .sepet-fav:hover {
-    text-shadow: 0 0 5px rgb(0, 0, 0) !important;
-
+	text-shadow: 0 0 5px rgb(0, 0, 0) !important;
 }
 
 .bi-cart-check:hover,
 .bi-heart:hover {
-    display: flex !important;
-    color: rgb(255, 225, 1) !important;
-    background-color: rgb(91, 91, 91, 0.2);
-    box-shadow: 0px 0px 20px rgb(91, 91, 91) !important;
+	display: flex !important;
+	color: rgb(255, 225, 1) !important;
+	background-color: rgb(91, 91, 91, 0.2);
+	box-shadow: 0px 0px 20px rgb(91, 91, 91) !important;
 }
 
 /*card bitiş */
 
-
 /*sepet başlangıç */
 .basket {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #c8aed350;
-    z-index: 999;
-    display: block;
+	position: fixed;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #c8aed350;
+	z-index: -1;
+	display: block;
+	transition: all 250ms ease-in-out;
+}
+
+.basket.active {
+	opacity: 1;
+	z-index: 999;
 }
 
 .basket-items {
-    width: 450px;
-    height: 100%;
-    background-color: #E6C4C0;
-    float: right;
+	width: 0;
+	height: 100%;
+	background-color: #e6c4c0;
+	float: right;
+	transition: all 250ms ease-in-out;
+}
+
+.basket.active .basket-items {
+	width: 450px;
 }
 
 .xmark-icon {
-    width: 100%;
+	width: 100%;
 
-    height: 60px;
-    align-items: center;
+	height: 60px;
+	align-items: center;
 }
 
 .xmark-button {
-    position: absolute !important;
-    right: 225px !important;
-    top: 10px !important;
-    font-size: 2rem !important;
-    color: #422d32 !important;
-    cursor: pointer !important;
-    border: none !important;
-
-
+	position: absolute !important;
+	right: 225px !important;
+	top: 10px !important;
+	font-size: 2rem !important;
+	color: #422d32 !important;
+	cursor: pointer !important;
+	border: none !important;
 }
 
 .xmark-button:hover {
-    border: none !important;
+	border: none !important;
 }
 
 .basket-h2 {
-    width: 100%;
+	width: 100%;
 
-    height: 70px;
-    text-align: center;
-
+	height: 70px;
+	text-align: center;
 }
 
 .items-list {
-    width: 100%;
-    max-height: 350px;
-    overflow: scroll;
-
+	width: 100%;
+	max-height: 350px;
+	overflow: scroll;
 }
 
 .items-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 20px;
-    margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 20px;
+	margin-bottom: 40px;
 }
 
 .sepet-item-info {
-    text-align: left;
-
+	text-align: left;
 }
 
 .sepet-fiyat {
-    margin-right: 10px;
-
-
+	margin-right: 10px;
 }
 
 .increase {
-    cursor: pointer;
-    margin-left: 5px;
-
+	cursor: pointer;
+	margin-left: 5px;
 }
 
 .decrease {
-    cursor: pointer;
-    margin-right: 5px;
+	cursor: pointer;
+	margin-right: 5px;
 }
 
 .sepet-baslik:hover {
-    text-shadow: 0 0 10px #613741;
-
+	text-shadow: 0 0 10px #613741;
 }
 
 .sepet-sonuc {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 15%;
-    justify-content: space-between;
-    align-items: center;
-
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 15%;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .total {
-    width: 100%;
-    padding: 0 25px;
-
+	width: 100%;
+	padding: 0 25px;
 }
 
-.total-danger{
-    margin-right: 10px !important;
+.total-danger {
+	margin-right: 10px !important;
 }
 
 .siparis-div {
-    position: relative;
-    width: 100%;
-    align-items: center;
-
+	position: relative;
+	width: 100%;
+	align-items: center;
 }
 
 .siparis {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 320px;
-
-
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 320px;
 }
-
 
 /*sepet bitiş */

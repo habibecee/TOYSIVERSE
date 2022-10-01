@@ -13,12 +13,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <!-- <script type="text/javascript" src="main.js"></script> -->
     <script src="https://kit.fontawesome.com/330ae4ea2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="navbar-brand" href="#"> TOYVERSE || OYUNCAK EVRENİ </a>
+                <a class="navbar-brand" href="#"> TOYSIVERSE || OYUNCAK EVRENİ </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -70,9 +71,10 @@
                     <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-light" id="searchh" type="submit"><i
                             class="bi bi-search"></i></button>
-                    <button class="btn btn-outline-light basket-icon" id="id-cart" type="submit"><i
-                            class="bi bi-cart4"></i> <span class="basket-count"> 2 </span></button>
-                    <button class="btn btn-outline-light" id="id-cart" type="submit"><i
+                    <button onclick="toggleModal()" class="btn btn-outline-light basket-icon id-cart" id="cart-icon"
+                        type="submit"><i class="bi bi-cart4"></i> <span class="basket-count"> 2
+                        </span></button>
+                    <button class="btn btn-outline-light id-cart" type="submit"><i
                             class="bi bi-person-circle"></i></button>
                 </form>
             </div>
@@ -198,11 +200,12 @@
 
 
         <!-- ÜRÜN KARTLARI BAŞLANGIÇ -->
-        <div class="right-div row col-9">
+        <div class="right-div row col-9 toy--list">
             <div class="text-center" id="ürünler" style="width: 100%; height:auto; ">
                 <h2 class="mt-3 font-weight-bold"> ÜRÜNLER </h2>
                 <hr class="ayrac"> <i class="fa-solid fa-paw i2"></i>
             </div>
+
             <div class="row col-2 card shadow rounded">
                 <div class="card-img-div col-3">
                     <img href='#' src="assets/images/peluş/peluş1.jpeg" class="card-img-top" alt="..."
@@ -222,7 +225,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
                             Şimdilik
                             açıklamasız bırakılmıştır. Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
@@ -258,7 +262,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -290,7 +295,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -322,7 +328,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -354,7 +361,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -386,7 +394,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -418,7 +427,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -450,7 +460,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -482,7 +493,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -514,7 +526,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -546,7 +559,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -578,7 +592,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -610,7 +625,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -642,7 +658,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -674,7 +691,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -706,7 +724,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -738,7 +757,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -770,7 +790,8 @@
                     <span class="m-0 p-0"> (100) </span>
 
                     <div class="card-details-div col ">
-                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik
+                        <p class="card-text m-0">Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır.
+                            Şimdilik
                             açıklamasız bırakılmıştır. </p>
                         <span class="price"> <del class="text-danger margin-right-3"> 189,99 &#8378 </del> <b
                                 style="font-size: 23px ;"> 149,99 &#8378 </b> </span>
@@ -783,6 +804,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -796,8 +818,8 @@
 
         <div class="basket-items">
             <div class="xmark-icon">
-                <button type="button" class="btn xmark-button" onclick="gizlegoster()"><i
-                        class="fa-solid fa-xmark"></i></button>
+                <button type="button" class="btn xmark-button" " onclick=" toggleModal()"><i
+                        class=" fa-solid fa-xmark"></i></button>
             </div>
             <div class="basket-h2">
                 <h2> SEPETİNİZ </h2>
@@ -881,7 +903,7 @@
 
 
 
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
