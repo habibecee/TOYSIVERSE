@@ -6,10 +6,10 @@
     "price": 19.25,
     "oldPrice": 49.90,
     "description": "Ürünle alakalı tüm bilgilerin girileceği paragraf alanıdır. Şimdilik açıklamasız bırakılmıştır",
-    "starRate": 5,
+    "starRate": 5.0,
     "reviewCount":120,
     "imgSource": "./assets/images/03yaş/03yaş1.jpeg",
-    "type": "0-3 YAŞ"
+    "type": "BABY"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "starRate": 4.7,
     "reviewCount":145,
     "imgSource": "./assets/images/03yaş/03yaş2.jpeg",
-    "type": "0-3 YAŞ"
+    "type": "BABY"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "starRate": 4.0,
     "reviewCount":93,
     "imgSource": "./assets/images/03yaş/03yaş3.webp",
-    "type": "0-3 YAŞ"
+    "type": "BABY"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "starRate": 3.9,
     "reviewCount":78,
     "imgSource": "./assets/images/diğer/bebek.jpg",
-    "type": "DİĞER"
+    "type": "OTHER"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "starRate": 4.9,
     "reviewCount":126,
     "imgSource": "./assets/images/diğer/kaktüs.webp",
-    "type": "DİĞER"
+    "type": "OTHER"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "starRate": 4.2,
     "reviewCount":57,
     "imgSource": "./assets/images/diğer/kovaset.jpg",
-    "type": "DİĞER"
+    "type": "OTHER"
   },
   {
     "id": 7,
@@ -117,7 +117,7 @@
     "starRate": 4.6,
     "reviewCount":29,
     "imgSource": "./assets/images/karakter/karakter1.png",
-    "type": "KARAKTER"
+    "type": "CHARACTER"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "starRate": 4.3,
     "reviewCount":39,
     "imgSource": "./assets/images/karakter/karakter2.png",
-    "type": "KARAKTER"
+    "type": "CHARACTER"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "starRate": 4.7,
     "reviewCount":95,
     "imgSource": "./assets/images/karakter/karakter3.jpg",
-    "type": "KARAKTER"
+    "type": "CHARACTER"
   },
   {
     "id": 13,
@@ -189,7 +189,7 @@
     "starRate": 2.9,
     "reviewCount":65,
     "imgSource": "./assets/images/peluş/peluş1.jpeg",
-    "type": "PELUŞ"
+    "type": "PLUSH"
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "starRate": 3.5,
     "reviewCount":87,
     "imgSource": "./assets/images/peluş/peluş2.jpg",
-    "type": "PELUŞ"
+    "type": "PLUSH"
   },
   {
     "id": 18,
@@ -213,6 +213,6 @@
     "starRate": 2.9,
     "reviewCount":64,
     "imgSource": "./assets/images/peluş/peluş3.jpg",
-    "type": "PELUŞ"
+    "type": "PLUSH"
   }
 ]

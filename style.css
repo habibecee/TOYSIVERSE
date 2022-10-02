@@ -99,12 +99,11 @@ body {
 /*slider bitiş */
 /*card balangıç */
 .store {
-	margin: 20px 3% !important;
+	margin: 10px !important;
 	padding: auto !important;
 }
 
 .i2 {
-	/* color: #E6C4C0; */
 	position: relative;
 	top: -45px;
 	font-size: 30px;
@@ -119,7 +118,7 @@ body {
 }
 
 .left-div {
-	width: 25% !important;
+	width: 20% !important;
 	height: 23rem !important;
 	margin-top: 13% !important;
 }
@@ -140,59 +139,75 @@ body {
 	justify-content: center !important;
 }
 
-.filtre {
-	position: absolute !important;
+.filter {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 }
 
-.filtre li {
+.filter li {
 	cursor: pointer;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	margin-bottom: 10px;
 	color: #845ec2;
-	font-weight: 400;
+	font-weight: 300;
 	transition: 0.2s ease-in-out;
 }
 
-.filtre li:hover {
+.filter li:hover {
 	color: #2fc4b2;
-	font-weight: 600;
+	font-weight: 400;
 }
 
-.filtre li.active {
+.filter li.active {
 	color: #12947f;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: bolder;
 	/* #7027A0 */
 }
 
 .right-div {
-	width: 75% !important;
+	width: 70% !important;
 	height: auto !important;
 	/* border: 2px solid red !important; */
-	position: relative !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {
 	/* position:absolute !important; */
-	margin: 15px 9px !important;
-	border: #c4b4b1 !important;
-	/* padding: 3px !important; */
-	width: 28rem !important;
-	height: 16rem !important;
-	background-color: #e6c4c0 !important;
-	/* box-shadow: #FCE2DB !important; */
+	margin: 10px 10px !important;
+	border: #a59694 !important;
+	padding: 3px !important;
+	width: 400px !important;
+	height: 18rem !important;
+	background-color: #c39d99 !important;
+	box-shadow: 0 0 15px 10px #7b6e6b !important;
+	transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+	background-color: #ceaeaa !important;
+	box-shadow: 0 0 10px 10px #706561 !important;
 }
 
 .checked {
-	color: orange !important;
+	color: rgba(230, 207, 3, 0.898) !important;
 }
 
 .card-img-div {
-	margin: 10px 30px !important;
+	margin: 10px 10px !important;
+	height: 150px !important;
+	opacity: 0.7 !important;
+	transition: 0.5s ease-in-out;
+}
+
+.card-img-div:hover {
+	opacity: 1 !important;
 }
 
 .ürün-ad {
@@ -210,13 +225,14 @@ body {
 }
 
 .btn-a {
-	background-color: #845ec2 !important;
+	background-color: #ac93b7 !important;
 	padding: 5px !important;
 	width: 130px !important;
+	transition: 0.5s ease-in-out;
 }
 
 .card-btn:hover {
-	background-color: #ac93b7 !important;
+	background-color: #845ec2 !important;
 	color: #422d32 !important;
 	border: none !important;
 }
@@ -228,8 +244,8 @@ body {
 
 .bi-cart-check,
 .bi-heart {
-	color: black !important;
-	transition: 0.5s !important;
+	color: rgb(37, 36, 36) !important;
+	transition: 0.8s !important;
 }
 
 .sepet-fav {
@@ -238,15 +254,15 @@ body {
 }
 
 .sepet-fav:hover {
-	text-shadow: 0 0 5px rgb(0, 0, 0) !important;
+	text-shadow: 0 0 15px rgba(111, 110, 110, 0.735) !important;
 }
 
 .bi-cart-check:hover,
 .bi-heart:hover {
 	display: flex !important;
-	color: rgb(255, 225, 1) !important;
-	background-color: rgb(91, 91, 91, 0.2);
-	box-shadow: 0px 0px 20px rgb(91, 91, 91) !important;
+	color: rgb(4, 177, 246) !important;
+	background-color: rgba(166, 162, 162, 0.191);
+	box-shadow: 0px 0px 5px rgba(156, 154, 154, 0.436) !important;
 }
 
 /*card bitiş */
