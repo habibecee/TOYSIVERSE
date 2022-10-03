@@ -8,4 +8,4 @@
 
 <h3> SITE VIEW </h3> </br>
 
-![](./src/assets/.gif) </br>
+![](./assets/toysiverse-screen.gif) </br>
