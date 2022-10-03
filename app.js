@@ -1,4 +1,24 @@
-let toyList = [];
+toastr.options = {
+	closeButton: false,
+	debug: false,
+	newestOnTop: true,
+	progressBar: false,
+	positionClass: "toast-top-center",
+	preventDuplicates: false,
+	onclick: null,
+	showDuration: "200",
+	hideDuration: "600",
+	timeOut: "1000",
+	extendedTimeOut: "500",
+	showEasing: "linear",
+	hideEasing: "linear",
+	showMethod: "fadeIn",
+	hideMethod: "fadeOut",
+};
+
+let toyList = [],
+	basketList = [],
+	favList = [];
 
 const toggleModal = () => {
 	const basketModalEl = document.querySelector(".basket");
@@ -55,10 +75,10 @@ const createToyItemsHtml = () => {
 				<b style="font-size: 23px ;"> ${toy.price} &#8378 </b> </span>
 				<button type="button" class="btn btn-a card-btn"><a href="#" class="card-link">Ürün Detayını
 						Gör</a></button>
-				<button type="button" class="btn sepet-fav" onclick="alert('ürün sepete eklendi')"><i
-						class="bi bi-cart-check basket-icon"></i></button>
-				<button type="button" class="btn sepet-fav" onclick="alert('ürün favorilere eklendi')"><i
-						class="bi bi-heart"></i></button>
+				<button type="button" class="btn sepet-fav" onclick="addBasket(${toy.id})"><i
+						class="bi bi-cart-check basket-icon" id="basketIcon"></i></button>
+				<button type="button" class="btn sepet-fav"  onclick="addFav(${toy.id})"><i
+						class="bi bi-heart" id="favIcon"></i></button>
 			</div>
 		</div>
 	</div>`;
@@ -68,13 +88,13 @@ const createToyItemsHtml = () => {
 };
 
 const TOYS_TYPES = {
-	ALL: "TÜMÜ",
-	BABY: "O-3 YAŞA UYGUN",
-	HANDMADE: "EL YAPIMI OYUNCAKLAR",
-	CHARACTER: "KARAKTER OYUNCAKLARI ",
-	LEGO: "LEGO",
-	PLUSH: "PELUŞ  ",
-	OTHER: "DİĞERLERİ",
+	ALL: "TÜMÜ (18)",
+	BABY: "O-3 YAŞA UYGUN (3)",
+	HANDMADE: "EL YAPIMI OYUNCAKLAR (3)",
+	CHARACTER: "KARAKTER OYUNCAKLARI (3) ",
+	LEGO: "LEGO (3)",
+	PLUSH: "PELUŞ (3) ",
+	OTHER: "DİĞERLERİ (3)",
 };
 
 const createToysTypesHtml = () => {
@@ -106,6 +126,142 @@ const filterToy = (filterEl) => {
 	if (toyType != "ALL") toyList = toyList.filter((toy) => toy.type == toyType);
 	createToyItemsHtml();
 };
+
+const listBasketItems = () => {
+	localStorage.setItem("basketList", JSON.stringify(basketList));
+	const basketListEl = document.querySelector(".items-list");
+	const basketCountEl = document.querySelector(".basket-count");
+	basketCountEl.innerHTML = basketList.length > 0 ? basketList.length : null;
+	const totalPriceEl = document.querySelector(".total-price");
+	const oldTotalPriceEl = document.querySelector("#oldTotal-price");
+	let basketListHtml = "";
+	let totalPrice = 0;
+	let oldTotalPrice = 0;
+	basketList.forEach((item) => {
+		totalPrice += item.product.price * item.quantity;
+		oldTotalPrice += item.product.oldPrice * item.quantity;
+
+		basketListHtml += ` <li class="basket-item" style="list-style-type:none;">
+		<div class="sepet-img" style="width: 100px; height: 100px; ">
+			<img src="${item.product.imgSource} " alt="" style='width: 100%; height: 100%;'>
+		</div>
+		<div class="sepet-item-info">
+			<h3 class="sepet-baslik fs-5" style="cursor:pointer ;"> ${item.product.name} </h3>
+			<span class="sepet-fiyat"> <del class="text-danger" > ${item.product.oldPrice} &#8378 </del> <b> ${item.product.price} &#8378
+				</b> </span>
+
+		</div>
+		<div class="creased">
+			<span class="decrease text-danger fs-5" onclick="decreaseItem(${item.product.id})" > - </span>
+			<span class="number fs-5"> ${item.quantity} </span>
+			<span class="increase text-success fs-5" onclick="increaseItem(${item.product.id})"> + </span>
+		</div>
+		<div class="trashcan" style="cursor:pointer ;">
+			<i class="fa-solid fa-trash-can text-danger" onclick="removeItemBasket(${item.product.id})"></i>
+		</div>
+	</li>`;
+	});
+
+	basketListEl.innerHTML = basketListHtml
+		? basketListHtml
+		: `<li class="basket-item" style="list-style-type:none;"><span class="noItem">No Items to Buy </span> </li>`;
+	totalPriceEl.innerHTML =
+		totalPrice > 0 ? totalPrice.toFixed(2) + "&#8378" : null;
+	oldTotalPriceEl.innerHTML =
+		oldTotalPrice > 0 ? oldTotalPrice.toFixed(2) + "&#8378" : null;
+};
+
+const addBasket = (toyId) => {
+	let findedToy = toyList.find((toy) => toy.id == toyId);
+	const basketIcon = document.querySelector("#basketIcon");
+	if (findedToy) {
+		const basketAlreadyIndex = basketList.findIndex(
+			(basket) => basket.product.id == toyId
+		);
+		if (basketAlreadyIndex < 0) {
+			let addedItem = { quantity: 1, product: findedToy };
+			basketList.push(addedItem);
+			toastr.success("ÜRÜN SEPETE EKLENDİ");
+		} else {
+			if (
+				basketList[basketAlreadyIndex].quantity <
+				basketList[basketAlreadyIndex].product.stock
+			) {
+				basketList[basketAlreadyIndex].quantity += 1;
+				toastr.info("ÜRÜN SAYISI ARTIRILDI");
+			} else {
+				toastr.error("YETERLİ STOK YOK! ÜRÜN EKLENEMEDİ!");
+				return;
+			}
+		}
+
+		console.log(basketList);
+		listBasketItems();
+	}
+};
+
+const addFav = (toyId) => {
+	let favToy = toyList.find((toy) => toy.id == toyId);
+	const favIcon = document.querySelector("#favIcon");
+	if (favToy) {
+		const toyIndex = favList.findIndex((fav) => fav.product.id == toyId);
+		if (toyIndex == -1) {
+			let addedFav = { fav: true, product: favToy };
+			favList.push(addedFav);
+			toastr.success("ÜRÜN FAVORİLERE EKLENDİ");
+			console.log(favList);
+		} else {
+			let removeFav = { fav: false, product: favToy };
+			favList.splice(removeFav);
+			toastr.info("ÜRÜN FAVORİLERDEN KALDIRILDI");
+			console.log(favList);
+			return;
+		}
+	}
+};
+
+const removeItemBasket = (toyId) => {
+	const findedIndex = basketList.findIndex(
+		(basket) => basket.product.id == toyId
+	);
+	if (findedIndex != -1) {
+		basketList.splice(findedIndex, 1);
+	}
+	listBasketItems();
+};
+
+const decreaseItem = (toyId) => {
+	const findedIndex = basketList.findIndex(
+		(basket) => basket.product.id == toyId
+	);
+	if (findedIndex != -1) {
+		if (basketList[findedIndex].quantity != 1) {
+			basketList[findedIndex].quantity -= 1;
+		} else removeItemBasket(toyId);
+	}
+	listBasketItems();
+};
+
+const increaseItem = (toyId) => {
+	const findedIndex = basketList.findIndex(
+		(basket) => basket.product.id == toyId
+	);
+	if (findedIndex != -1) {
+		if (
+			basketList[findedIndex].quantity < basketList[findedIndex].product.stock
+		) {
+			basketList[findedIndex].quantity += 1;
+		} else {
+			toastr.error("YETERLİ STOK YOK! ÜRÜN EKLENEMEDİ!");
+		}
+		listBasketItems();
+	}
+};
+
+if (localStorage.getItem("basketList")) {
+	basketList = JSON.parse(localStorage.getItem("basketList"));
+	listBasketItems();
+}
 
 setTimeout(() => {
 	createToyItemsHtml();

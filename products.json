@@ -9,7 +9,8 @@
     "starRate": 5.0,
     "reviewCount":120,
     "imgSource": "./assets/images/03yaş/03yaş1.jpeg",
-    "type": "BABY"
+    "type": "BABY",
+    "stock": 10
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "starRate": 4.7,
     "reviewCount":145,
     "imgSource": "./assets/images/03yaş/03yaş2.jpeg",
-    "type": "BABY"
+    "type": "BABY",
+    "stock": 5
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "starRate": 4.0,
     "reviewCount":93,
     "imgSource": "./assets/images/03yaş/03yaş3.webp",
-    "type": "BABY"
+    "type": "BABY",
+    "stock": 15
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "starRate": 3.9,
     "reviewCount":78,
     "imgSource": "./assets/images/diğer/bebek.jpg",
-    "type": "OTHER"
+    "type": "OTHER",
+    "stock": 20
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "starRate": 4.9,
     "reviewCount":126,
     "imgSource": "./assets/images/diğer/kaktüs.webp",
-    "type": "OTHER"
+    "type": "OTHER",
+    "stock": 10
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "starRate": 4.2,
     "reviewCount":57,
     "imgSource": "./assets/images/diğer/kovaset.jpg",
-    "type": "OTHER"
+    "type": "OTHER",
+    "stock": 10
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "starRate": 4.1,
     "reviewCount":83,
     "imgSource": "./assets/images/handmade/handmade1.jpg",
-    "type": "HANDMADE"
+    "type": "HANDMADE",
+    "stock": 5
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "starRate": 3.1,
     "reviewCount":214,
     "imgSource": "./assets/images/handmade/handmade2.jpg",
-    "type": "HANDMADE"
+    "type": "HANDMADE",
+    "stock": 10
   },
   {
     "id": 9,
@@ -105,7 +113,8 @@
     "starRate": 4.1,
     "reviewCount":156,
     "imgSource": "./assets/images/handmade/handmade3.jpg",
-    "type": "HANDMADE"
+    "type": "HANDMADE",
+    "stock": 10
   },
   {
     "id": 10,
@@ -117,7 +126,8 @@
     "starRate": 4.6,
     "reviewCount":29,
     "imgSource": "./assets/images/karakter/karakter1.png",
-    "type": "CHARACTER"
+    "type": "CHARACTER",
+    "stock": 10
   },
   {
     "id": 11,
@@ -129,7 +139,8 @@
     "starRate": 4.3,
     "reviewCount":39,
     "imgSource": "./assets/images/karakter/karakter2.png",
-    "type": "CHARACTER"
+    "type": "CHARACTER",
+    "stock": 10
   },
   {
     "id": 12,
@@ -141,7 +152,8 @@
     "starRate": 4.7,
     "reviewCount":95,
     "imgSource": "./assets/images/karakter/karakter3.jpg",
-    "type": "CHARACTER"
+    "type": "CHARACTER",
+    "stock": 10
   },
   {
     "id": 13,
@@ -153,7 +165,8 @@
     "starRate": 4.7,
     "reviewCount":148,
     "imgSource": "./assets/images/lego/lego1.png",
-    "type": "LEGO"
+    "type": "LEGO",
+    "stock": 10
   },
   {
     "id": 14,
@@ -165,7 +178,8 @@
     "starRate": 4.9,
     "reviewCount":217,
     "imgSource": "./assets/images/lego/lego2.jpg",
-    "type": "LEGO"
+    "type": "LEGO",
+    "stock": 10
   },
   {
     "id": 15,
@@ -177,7 +191,8 @@
     "starRate": 4.7,
     "reviewCount":468,
     "imgSource": "./assets/images/lego/lego3.jpg",
-    "type": "LEGO"
+    "type": "LEGO",
+    "stock": 10
   },
   {
     "id": 16,
@@ -189,7 +204,8 @@
     "starRate": 2.9,
     "reviewCount":65,
     "imgSource": "./assets/images/peluş/peluş1.jpeg",
-    "type": "PLUSH"
+    "type": "PLUSH",
+    "stock": 10
   },
   {
     "id": 17,
@@ -201,7 +217,8 @@
     "starRate": 3.5,
     "reviewCount":87,
     "imgSource": "./assets/images/peluş/peluş2.jpg",
-    "type": "PLUSH"
+    "type": "PLUSH",
+    "stock": 10
   },
   {
     "id": 18,
@@ -213,6 +230,7 @@
     "starRate": 2.9,
     "reviewCount":64,
     "imgSource": "./assets/images/peluş/peluş3.jpg",
-    "type": "PLUSH"
+    "type": "PLUSH",
+    "stock": 10
   }
 ]
